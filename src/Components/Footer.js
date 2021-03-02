@@ -9,32 +9,29 @@ const Footer = () => {
 				</h3>
 			</div>
 			<div className="footer-icons">
-				<button
-					className="icon2"
-					href="https://github.com/sayler3"
-					target="blank"
-				>
+				<a className="icon2" href="https://github.com/sayler3" target="blank">
 					<i className="bi bi-github"></i>
-				</button>
-				<button
+				</a>
+				<a
 					className="icon2"
 					id="footer-space"
 					href="https://www.linkedin.com/in/samuel-ayler-8321b91b4/"
 					target="blank"
 				>
 					<i className="bi bi-linkedin"></i>
-				</button>
-				<button
+				</a>
+				<a
 					className="icon2"
+					href="..."
 					target="blank"
 					data-bs-toggle="modal"
 					data-bs-target="#resumeModal"
 				>
 					<i className="bi bi-download"></i>
-				</button>
-				<button className="icon2" href="mailto:s.ayler@me.com">
+				</a>
+				<a className="icon2" href="mailto:s.ayler@me.com">
 					<i className="bi bi-envelope-open"></i>
-				</button>
+				</a>
 			</div>
 		</section>
 	);
