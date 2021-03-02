@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/React_Portfolio/static/css/main.db6edd09.chunk.css",
+    "main.js": "/React_Portfolio/static/js/main.86c224b0.chunk.js",
+    "main.js.map": "/React_Portfolio/static/js/main.86c224b0.chunk.js.map",
+    "runtime-main.js": "/React_Portfolio/static/js/runtime-main.0ec6d46d.js",
+    "runtime-main.js.map": "/React_Portfolio/static/js/runtime-main.0ec6d46d.js.map",
+    "static/js/2.6e0da530.chunk.js": "/React_Portfolio/static/js/2.6e0da530.chunk.js",
+    "static/js/2.6e0da530.chunk.js.map": "/React_Portfolio/static/js/2.6e0da530.chunk.js.map",
+    "static/js/3.06372844.chunk.js": "/React_Portfolio/static/js/3.06372844.chunk.js",
+    "static/js/3.06372844.chunk.js.map": "/React_Portfolio/static/js/3.06372844.chunk.js.map",
+    "index.html": "/React_Portfolio/index.html",
+    "static/css/main.db6edd09.chunk.css.map": "/React_Portfolio/static/css/main.db6edd09.chunk.css.map",
+    "static/js/2.6e0da530.chunk.js.LICENSE.txt": "/React_Portfolio/static/js/2.6e0da530.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/React_Portfolio/static/media/IMG_1.62ec8dea.jpg",
+    "static/media/Resume.87f3642a.pdf": "/React_Portfolio/static/media/Resume.87f3642a.pdf",
+    "static/media/galaxy_login.228a14d8.png": "/React_Portfolio/static/media/galaxy_login.228a14d8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0ec6d46d.js",
+    "static/js/2.6e0da530.chunk.js",
+    "static/css/main.db6edd09.chunk.css",
+    "static/js/main.86c224b0.chunk.js"
+  ]
+}
