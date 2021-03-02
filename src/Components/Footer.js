@@ -22,7 +22,7 @@ const Footer = () => {
 				</a>
 				<a
 					className="icon2"
-					href=""
+					href="..."
 					target="blank"
 					data-bs-toggle="modal"
 					data-bs-target="#resumeModal"
