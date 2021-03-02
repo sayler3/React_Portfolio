@@ -32,6 +32,16 @@ const Footer = () => {
 				<a className="icon2" href="mailto:s.ayler@me.com">
 					<i className="fas fa-envelope fa-3x"></i>
 				</a>
+				<button
+					style={{ border: "none" }}
+					className="icon2"
+					href="..."
+					target="blank"
+					data-bs-toggle="modal"
+					data-bs-target="#resumeModal"
+				>
+					<i className="fas fa-download fa-3x"></i>
+				</button>
 			</div>
 		</section>
 	);
