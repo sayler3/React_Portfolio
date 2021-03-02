@@ -143,13 +143,13 @@ const Carousel = () => {
 				</p>
 				<div className="links" tabIndex="0">
 					<a
-						className="fab fa-github-alt links"
+						className="bi bi-link-45deg link"
 						href="https://sayler3.github.io/Food_Application/"
 					>
 						Deployed
 					</a>
 					<a
-						className="fas fa-code-branch links"
+						className="bi bi-github link"
 						href="https://github.com/sayler3/Food_Application/tree/main/Assets/images"
 					>
 						Repo

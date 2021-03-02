@@ -134,7 +134,15 @@ h4 {
 }
 
 .links {
+	display: inline-flex;
+	justify-content: center;
+	cursor: pointer;
+	gap: 15px;
+}
+
+.link {
 	color: black;
+	text-decoration: none;
 }
 
 .modal-footer,
@@ -178,10 +186,6 @@ h4 {
 	font-size: 19px;
 	font-weight: bold;
 }
-
-/* .footer-icons {
-	background: #f5f5f5;
-} */
 
 .footer-text {
 	font-weight: bold;
