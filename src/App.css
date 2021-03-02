@@ -1,38 +1,256 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Mansalva&display=swap");
+
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+		url("./Utils/IMG_1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 730px;
+	background-position: center bottom;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carousel-inner {
+	max-height: 500px !important;
+	max-width: 900px !important;
+}
+/* .w-100 {
+	background-size: contain;
+} */
+
+.head2 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: space-between;
+	width: 100%;
+	height: 500px;
+	padding: 46px 32px 0 32px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-icons {
+	align-self: flex-start;
+	margin-top: 10px;
+	padding-left: 150px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header-text {
+	align-self: flex-start;
+	color: white;
+	padding-left: 100px;
+	padding-top: 250px;
 }
 
-.App-link {
-  color: #61dafb;
+.name {
+	font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon {
+	color: whitesmoke;
+	display: inline-flex;
+	justify-content: center;
+	cursor: pointer;
+	padding-top: 50px;
+}
+
+.icon2 {
+	color: black;
+	display: inline-flex;
+	justify-content: center;
+	cursor: pointer;
+	padding-top: 50px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.portfolio-header {
+	font-size: 20px;
+	font-weight: lighter;
+	padding: 5px;
+}
+
+.header-h1 {
+	font-size: 40px;
+	font: bold;
+	color: white;
+}
+
+.profile-pic-div {
+	padding-right: 100px;
+}
+
+.profile-picture {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin-bottom: -25px;
+	border: 3px solid gray;
+}
+
+.sec-grey {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	background: #f5f5f5;
+	height: 100%;
+	padding: 46px 32px 46px 32px;
+	font-size: 16px;
+	letter-spacing: 0.2px;
+	line-height: 1.6;
+}
+
+.sec-white {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	background: #ffffff;
+	height: 100%;
+	padding: 46px 32px 46px 32px;
+	font-size: 16px;
+	letter-spacing: 0.2px;
+	line-height: 1.6;
+}
+
+.heading-box {
+	font-size: 35px;
+	text-align: center;
+	color: black;
+	/* background: #000000; */
+	margin: auto;
+	padding: 1px 16px 1px 16px;
+	font-family: Mansalva;
+}
+
+.description {
+	text-align: center;
+}
+
+h4 {
+	font-family: Mansalva;
+}
+
+.links {
+	color: black;
+}
+
+.modal-footer,
+.modal-header {
+	background-color: gray;
+}
+
+.feature-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+	max-width: 100%;
+}
+
+.card {
+	max-width: 400px;
+}
+
+.header-3 {
+	text-align: center;
+	color: black;
+	margin-top: 40px;
+	font-size: 20px;
+}
+
+.skills-wrapper {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.skills-container {
+	width: 30%;
+}
+
+.skills-heading {
+	color: black;
+	margin-top: 20px;
+	font-size: 19px;
+	font-weight: bold;
+}
+
+.footer-icons {
+	display: flex;
+	justify-content: center;
+	opacity: 40%;
+}
+
+.footer-text {
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.footer-text2 {
+	padding-top: 10px;
+}
+
+/* #footer-space {
+	padding-left: 30px;
+	padding-right: 30px;
+} */
+
+#tech-header {
+	font-size: 22px;
+	margin: 0;
+}
+
+.tech-text {
+	margin-top: 20px;
+}
+
+#icon-space {
+	padding-left: 5px;
+	padding-right: 30px;
+}
+
+#bio {
+	padding-bottom: 20px;
+}
+
+#heading-project-box {
+	padding-bottom: 20px;
+}
+
+#tech {
+	max-width: 1100px;
+}
+
+* {
+	box-sizing: border-box;
+	/* -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-font-smoothing: antialiased; */
+	text-rendering: optimizeLegibility;
+	margin: 0;
+	padding: 0;
+}
+
+/* mobile */
+@media (max-width: 480px) {
+	header {
+		background-position: center right;
+	}
+
+	.header-text {
+		padding-top: 10px;
+	}
+}
+/* end mobile media query */
+
+@media (min-width: 481px) and (max-width: 1024px) {
+	header {
+		background-position: center right;
+	}
+
+	.header-text {
+		padding-top: 10px;
+	}
 }
