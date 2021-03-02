@@ -179,11 +179,9 @@ h4 {
 	font-weight: bold;
 }
 
-.footer-icons {
-	display: flex;
-	justify-content: center;
+/* .footer-icons {
 	opacity: 40%;
-}
+} */
 
 .footer-text {
 	font-weight: bold;

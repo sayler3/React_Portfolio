@@ -7,7 +7,6 @@ const Footer = () => {
 				<h3 tabIndex="0" id="tech-header">
 					GET IN TOUCH
 				</h3>
-				<i className="bi bi-github"></i>
 			</div>
 			<div className="footer-icons">
 				<button
