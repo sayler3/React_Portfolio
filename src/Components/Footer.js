@@ -9,38 +9,32 @@ const Footer = () => {
 				</h3>
 			</div>
 			<div className="footer-icons">
-				<a className="icon2" href="https://github.com/sayler3" target="blank">
-					<i className="fab fa-github fa-3x"></i>
-				</a>
-				<a
+				<button
+					className="icon2"
+					href="https://github.com/sayler3"
+					target="blank"
+				>
+					<i className="bi bi-github"></i>
+				</button>
+				<button
 					className="icon2"
 					id="footer-space"
 					href="https://www.linkedin.com/in/samuel-ayler-8321b91b4/"
 					target="blank"
 				>
-					<i className="fab fa-linkedin-in fa-3x"></i>
-				</a>
-				<a
-					className="icon2"
-					href="..."
-					target="blank"
-					data-bs-toggle="modal"
-					data-bs-target="#resumeModal"
-				>
-					<i className="fas fa-download fa-3x"></i>
-				</a>
-				<a className="icon2" href="mailto:s.ayler@me.com">
-					<i className="fas fa-envelope fa-3x"></i>
-				</a>
+					<i className="bi bi-linkedin"></i>
+				</button>
 				<button
-					style={{ border: "none" }}
 					className="icon2"
 					href="..."
 					target="blank"
 					data-bs-toggle="modal"
 					data-bs-target="#resumeModal"
 				>
-					<i className="fas fa-download fa-3x"></i>
+					<i className="bi bi-download"></i>
+				</button>
+				<button className="icon2" href="mailto:s.ayler@me.com">
+					<i className="bi bi-envelope-open"></i>
 				</button>
 			</div>
 		</section>
