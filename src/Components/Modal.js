@@ -25,6 +25,7 @@ const Modal = () => {
 					</div>
 					<div className="modal-body">
 						<iframe
+							title="resume"
 							className="resume-iframe"
 							src={Resume}
 							width="100%"
