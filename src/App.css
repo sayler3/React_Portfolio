@@ -5,7 +5,7 @@ header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
 		url("./Utils/IMG_1.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain, cover;
 	background-attachment: fixed;
 	height: 730px;
 	background-position: center bottom;
@@ -242,6 +242,7 @@ h4 {
 @media (max-width: 480px) {
 	header {
 		background-position: center right;
+		background-size: contain, cover;
 	}
 
 	.header-text {
@@ -253,6 +254,7 @@ h4 {
 @media (min-width: 481px) and (max-width: 1024px) {
 	header {
 		background-position: center right;
+		background-size: contain, cover;
 	}
 
 	.header-text {
