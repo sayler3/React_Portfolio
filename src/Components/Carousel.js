@@ -1,52 +1,55 @@
 import React from "react";
 import { useState } from "react";
-import logo from "../Utils/galaxy_login.png";
+import galxay_img from "../Utils/galaxy_img.png";
+import directory_img from "../Utils/directory_img.png";
+import pal_img from "../Utils/pal_img.png";
+import workout_img from "../Utils/workout_img.png";
 
 const Carousel = () => {
-	// intial state of information
-	const [project, setproject] = useState([
+	const list = [
 		{
 			title: "Galaxy",
-			img: logo,
-			id: 1,
+			img: galxay_img,
+
 			description:
 				"Galaxy Planner is a full-stack application designed to make household\
-			planning easier. A user or users can keep track of what chores each\
-			person is responsible for. Themed around superheros, the app creators\
-			hope that this increases interactivity and engagement for younger\
-			members of each household. All credentials are protected with\
-			encryption. A Sequelize ORM coupled with GET and POST enables\
-			server-side CRUD functionality.",
-			deployed: "",
-			repo: "",
-		},
-		{
-			title: "Burger",
-			img:
-				"https://images.unsplash.com/photo-1613230485062-bd14a89bb3c8?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
-			id: 2,
-			description: "Some text goes here...",
-			deployed: "",
-			repo: "",
+		planning easier. A user or users can keep track of what chores each\
+		person is responsible for. Themed around superheros, the app creators\
+		hope that this increases interactivity and engagement for younger\
+		members of each household. All credentials are protected with\
+		encryption. A Sequelize ORM coupled with GET and POST enables\
+		server-side CRUD functionality.",
+			deployed: "https://galaxy-planning.herokuapp.com/",
+			repo: "https://github.com/sayler3/Galaxy",
 		},
 		{
 			title: "Recipe Pal",
-			id: 3,
-			description: "Some text goes here...",
-			deployed: "",
-			repo: "",
+			img: pal_img,
+
+			description:
+				"Recipe Pal is a place where you can search for recipes, filter by preference, easily view ingredients required and add to your own customized grocery list. Our website makes it easy to locate open grocery stores and supermarkets nearby. So you can plan your perfect night cooking at home for family and friends, or for oneself, within a few clicks!",
+			deployed: "https://sayler3.github.io/Food_Application/",
+			repo: "https://github.com/sayler3/Food_Application",
 		},
 		{
-			title: "Test",
-			id: 4,
-			description: "Some text goes here...",
-			deployed: "",
-			repo: "",
+			title: "Employee Directory",
+			img: directory_img,
+			description:
+				"This is a full-stack application that gives a company or business the ability to access non-sensitive data about their employees, and easily search, filter, sort, add, and update information through their entire directory.",
+			deployed: "https://employee-directory-s.herokuapp.com/",
+			repo: "https://github.com/sayler3/Employee_Directory",
 		},
-	]);
-
-	// state for current view
-	const [current, setcurrent] = useState(project[0]);
+		{
+			title: "Workout Tracker",
+			img: workout_img,
+			description:
+				"A user is able to view create and track daily workouts. Multiple exercises can be logged in a workout on any given day. The user is also able to track the name, type, weight, sets, reps, and duration of an exercise.",
+			deployed: "https://workout-tracker-sa.herokuapp.com/",
+			repo: "https://github.com/sayler3/Workout_Tracker",
+		},
+	];
+	// intial state of information
+	const [project, setproject] = useState(list);
 
 	return (
 		<section className="projects sec-grey">
@@ -96,48 +99,50 @@ const Carousel = () => {
 								style={{ overflow: "inherit" }}
 							>
 								<div className="carousel-item active" target="1">
-									<img src={current.img} className="d-block w-100" alt="..." />
+									<img
+										src={project[0].img}
+										className="d-block w-100"
+										alt="..."
+									/>
 									<p></p>
 									<div className="description" id="tech">
-										<h4 tabIndex="0">{current.title}</h4>
+										<h4 tabIndex="0">{project[0].title}</h4>
 										<p className="descriptionText media-caption" tabIndex="0">
-											{current.description}
+											{project[0].description}
 										</p>
 										<div className="links" tabIndex="0">
 											<a
 												className="bi bi-link-45deg link"
-												href="https://sayler3.github.io/Food_Application/"
+												href={project[0].deployed}
 											>
 												Deployed
 											</a>
-											<a
-												className="bi bi-github link"
-												href="https://github.com/sayler3/Food_Application/tree/main/Assets/images"
-											>
+											<a className="bi bi-github link" href={project[0].repo}>
 												Repo
 											</a>
 										</div>
 									</div>
 								</div>
 								<div className="carousel-item" target="2">
-									<img src={current.img} className="d-block w-100" alt="..." />
+									<img
+										src={project[1].img}
+										className="d-block w-100"
+										alt="..."
+									/>
 									<p></p>
 									<div className="description" id="tech">
-										<h4 tabIndex="0">{current.title}</h4>
+										<h4 tabIndex="0">{project[1].title}</h4>
 										<p className="descriptionText media-caption" tabIndex="0">
-											{current.description}
+											{project[1].description}
 										</p>
 										<div className="links" tabIndex="0">
 											<a
 												className="bi bi-link-45deg link"
-												href="https://sayler3.github.io/Food_Application/"
+												href={project[1].deployed}
 											>
 												Deployed
 											</a>
-											<a
-												className="bi bi-github link"
-												href="https://github.com/sayler3/Food_Application/tree/main/Assets/images"
-											>
+											<a className="bi bi-github link" href={project[1].repo}>
 												Repo
 											</a>
 										</div>
@@ -145,27 +150,24 @@ const Carousel = () => {
 								</div>
 								<div className="carousel-item">
 									<img
-										src="https://images.unsplash.com/photo-1613230485062-bd14a89bb3c8?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+										src={project[2].img}
 										className="d-block w-100"
 										alt="..."
 									/>
 									<p></p>
 									<div className="description" id="tech">
-										<h4 tabIndex="0">{current.title}</h4>
+										<h4 tabIndex="0">{project[2].title}</h4>
 										<p className="descriptionText media-caption" tabIndex="0">
-											{current.description}
+											{project[2].description}
 										</p>
 										<div className="links" tabIndex="0">
 											<a
 												className="bi bi-link-45deg link"
-												href="https://sayler3.github.io/Food_Application/"
+												href={project[2].deployed}
 											>
 												Deployed
 											</a>
-											<a
-												className="bi bi-github link"
-												href="https://github.com/sayler3/Food_Application/tree/main/Assets/images"
-											>
+											<a className="bi bi-github link" href={project[2].repo}>
 												Repo
 											</a>
 										</div>
@@ -173,27 +175,24 @@ const Carousel = () => {
 								</div>
 								<div className="carousel-item" target="3">
 									<img
-										src="https://images.unsplash.com/photo-1613230485062-bd14a89bb3c8?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+										src={project[3].img}
 										className="d-block w-100"
 										alt="..."
 									/>
 									<p></p>
 									<div className="description" id="tech">
-										<h4 tabIndex="0">{current.title}</h4>
+										<h4 tabIndex="0">{project[3].title}</h4>
 										<p className="descriptionText media-caption" tabIndex="0">
-											{current.description}
+											{project[3].description}
 										</p>
 										<div className="links" tabIndex="0">
 											<a
 												className="bi bi-link-45deg link"
-												href="https://sayler3.github.io/Food_Application/"
+												href={project[3].deployed}
 											>
 												Deployed
 											</a>
-											<a
-												className="bi bi-github link"
-												href="https://github.com/sayler3/Food_Application/tree/main/Assets/images"
-											>
+											<a className="bi bi-github link" href={project[3].repo}>
 												Repo
 											</a>
 										</div>
